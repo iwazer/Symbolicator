@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E4541FE1BAAB689006148C5 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4541FD1BAAB689006148C5 /* LogViewController.swift */; };
 		4E469EA21BA97177005CAEAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E469EA11BA97177005CAEAC /* AppDelegate.swift */; };
 		4E469EA41BA97177005CAEAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E469EA31BA97177005CAEAC /* ViewController.swift */; };
 		4E469EA61BA97177005CAEAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E469EA51BA97177005CAEAC /* Images.xcassets */; };
 		4E469EA91BA97177005CAEAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E469EA71BA97177005CAEAC /* Main.storyboard */; };
 		4E469EB51BA97177005CAEAC /* SymbolicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E469EB41BA97177005CAEAC /* SymbolicatorTests.swift */; };
+		4EA96E811BABBD3800CB246E /* PathTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA96E801BABBD3800CB246E /* PathTextField.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E4541FD1BAAB689006148C5 /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		4E469E9C1BA97177005CAEAC /* Symbolicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Symbolicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E469EA01BA97177005CAEAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E469EA11BA97177005CAEAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		4E469EAE1BA97177005CAEAC /* SymbolicatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymbolicatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E469EB31BA97177005CAEAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E469EB41BA97177005CAEAC /* SymbolicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolicatorTests.swift; sourceTree = "<group>"; };
+		4EA96E801BABBD3800CB246E /* PathTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				4E469EA51BA97177005CAEAC /* Images.xcassets */,
 				4E469EA71BA97177005CAEAC /* Main.storyboard */,
 				4E469E9F1BA97177005CAEAC /* Supporting Files */,
+				4E4541FD1BAAB689006148C5 /* LogViewController.swift */,
+				4EA96E801BABBD3800CB246E /* PathTextField.swift */,
 			);
 			path = Symbolicator;
 			sourceTree = "<group>";
@@ -153,7 +159,9 @@
 		4E469E941BA97177005CAEAC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = iwazer;
 				TargetAttributes = {
 					4E469E9B1BA97177005CAEAC = {
@@ -208,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA96E811BABBD3800CB246E /* PathTextField.swift in Sources */,
+				4E4541FE1BAAB689006148C5 /* LogViewController.swift in Sources */,
 				4E469EA41BA97177005CAEAC /* ViewController.swift in Sources */,
 				4E469EA21BA97177005CAEAC /* AppDelegate.swift in Sources */,
 			);
@@ -264,6 +274,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -330,6 +341,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Symbolicator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iwazer.osx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -341,6 +353,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Symbolicator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iwazer.osx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -360,6 +373,7 @@
 				);
 				INFOPLIST_FILE = SymbolicatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iwazer.osx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Symbolicator.app/Contents/MacOS/Symbolicator";
 			};
@@ -376,6 +390,7 @@
 				);
 				INFOPLIST_FILE = SymbolicatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iwazer.osx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Symbolicator.app/Contents/MacOS/Symbolicator";
 			};
@@ -400,6 +415,7 @@
 				4E469EBA1BA97177005CAEAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E469EBB1BA97177005CAEAC /* Build configuration list for PBXNativeTarget "SymbolicatorTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +424,7 @@
 				4E469EBD1BA97177005CAEAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
